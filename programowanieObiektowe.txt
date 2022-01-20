@@ -1,0 +1,4 @@
+
+Programowanie obiektowe to programowanie przy pomocy obiektów posiadających swoje właściwości jak pola
+oraz metody. Programowanie obiektowe polega na definiowaniu obiektów oraz wywoływaniu ich 
+metod, tak aby współdziałały wzajemnie ze sobą.
