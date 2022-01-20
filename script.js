@@ -63,6 +63,10 @@ window.addEventListener('load', () => {
                 task_element_edit.innerText = "Edit"
             }
         })
+        //Delete
+        task_element_delete.addEventListener('click', () => {
+            list.removeChild(task_element);
+        })
 
     })
 })
