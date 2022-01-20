@@ -6,8 +6,6 @@ body{
 }
 
 *{
-    margin: 0;
-    padding: 0;
     font-family: sans-serif, Arial;
 }
 
@@ -35,8 +33,25 @@ header h1{
     background: #404040;
 }
 
+#new-task-submit{
+    color: firebrick;
+    border: none;
+    background: none;
+    outline: none;
+    appearance: none;
+    padding-left: 1.5em;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#new-task-submit:hover{
+    opacity: 0.7;
+}
+
+________________________________________________________________
+
 main{
-    padding-left: 3em;
+    flex: 0.8 1 0%;
     width: 100%;
     max-width: 900px;
 }
@@ -46,4 +61,50 @@ main h2{
     padding-bottom: 0.5em;
     font-size: 2rem;
     font-weight: 700;
+}
+
+.task-list{
+    padding: 3em;
+}
+
+button, input{
+    border: none;
+    background: none;
+    outline: none;
+    appearance: none;
+}
+
+.text{
+    flex: 0.8 1 0%;
+    padding: 1em;
+    border-radius: 1em;
+    background: #202020;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background: #303030;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+#tasks .task .content .text{
+    color: #707070;
+    font-size: 1.25em;
+    width: 100%;
+    display: block;
+}
+
+#tasks .task .buttons{
+    display: flex;
+    margin: 0 -0.5em;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5em;
+    font-size: 1.25em;
+
 }
