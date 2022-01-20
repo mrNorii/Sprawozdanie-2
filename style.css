@@ -101,18 +101,18 @@ button, input{
     font-size: 1.25em;
 }
 
-#edit{
+.edit{
     color: turquoise;
 }
 
-#edit:hover{
+.edit:hover{
     opacity: 0.7;
 }
 
-#delete{
+.delete{
     color: rgb(255, 0, 0);
 }
 
-#delete:hover{
+.delete:hover{
     opacity: 0.7;
 }
