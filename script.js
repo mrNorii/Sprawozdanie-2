@@ -47,10 +47,22 @@ window.addEventListener('load', () => {
         
         task_element_buttons.appendChild(task_element_edit);
         task_element_buttons.appendChild(task_element_delete);
+
+        task_element.appendChild(task_element_buttons);
         
-        list.appendChild(task_element)
+        list.appendChild(task_element);
 
-
+        //Buttons action
+        //Edit
+        task_element_edit.addEventListener('click', () => {
+            if(task_element_edit.innerText == "Edit"){
+                task_element_input.removeAttribute("readonly");
+                task_element_edit.innerText = "Save";
+            }else{
+                task_element_input.setAttribute("readonly", "readonly");
+                task_element_edit.innerText = "Edit"
+            }
+        })
 
     })
 })
